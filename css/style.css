@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+
+.tittle {
+  font-family: 'Qwigley', cursive;
+  color: #467ca0d1;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.fecha{
+  font-family: 'Libre Bodoni', serif;
+  font-size: xxx-large;
+  color: #1f1f1fd1;
+  font-weight: 500;
+}
+
+
+.section {
+  background-image: url(./assets/backgrounds/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.inicio{
+    background-image: url(./assets/backgrounds/paper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  text-align: center;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contador{
+    max-width: 900px;
+    margin:60px auto;
+}
+
+.contador h1{
+    color:#fff;
+}
+
+.center-abs{
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+}
+
+.charts{
+    display: flex;
+}
+
+.chart{
+    position: relative;
+    width:25%;
+    height: 260px;
+}
+
+.chart h3{
+    color:#fff;
+    font-size: 1.8em;
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.chart svg{
+    z-index: 2;
+}
+
+/* DIV CIRCULO DE FONDO */
+.circle{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    z-index:1;
+    border:10px #baeaff solid;
+}
+
+.text{
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-size: 3.8em;
+    font-weight: 700;
+    color:#0096da
+}
