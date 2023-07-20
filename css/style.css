@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
 
+body {
+    background-image: url(../img/backgrounds/paper.jpg);
+}
+
 .tittle {
   font-family: 'Qwigley', cursive;
   color: #467ca0d1;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 
 .fecha{
   font-family: 'Libre Bodoni', serif;
@@ -17,14 +28,18 @@
 
 
 .section {
-  background-image: url(./assets/backgrounds/sky.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+    background-image: url(../img/backgrounds/sky.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 .inicio{
-    background-image: url(./assets/backgrounds/paper.jpg);
+    background-image: url(../img/backgrounds/paper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   text-align: center;
@@ -73,15 +88,11 @@
     text-shadow: 1px 1px 10px #000;
 }
 
-.chart svg{
-    z-index: 2;
-}
-
 /* DIV CIRCULO DE FONDO */
 .circle{
     width: 150px;
     height:150px;
-    border-radius: 50%;
+    background-color: #94b8d7;
     z-index:1;
     border:10px #baeaff solid;
 }
@@ -91,6 +102,11 @@
     text-align: center;
     width: 100%;
     font-size: 3.8em;
-    font-weight: 700;
-    color:#0096da
+    font-weight: 500;
+    color: white;
+}
+
+
+.img-icons{
+    width: 5%;
 }
