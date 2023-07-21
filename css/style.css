@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-image: url(../img/backgrounds/paper.jpg);
 }
 
 .tittle {
-  font-family: 'Qwigley', cursive;
+    font-family: 'Carattere', cursive;
   color: #467ca0d1;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -18,14 +26,12 @@ body {
     line-height: 1.2;
 }
 
-
 .fecha{
-  font-family: 'Libre Bodoni', serif;
-  font-size: xxx-large;
+    font-family: 'Libre Bodoni', serif;
+  font-size: 5rem;
   color: #1f1f1fd1;
   font-weight: 500;
 }
-
 
 .section {
     background-image: url(../img/backgrounds/sky.jpg);
@@ -38,18 +44,16 @@ body {
     text-align: center;
 }
 
+.section h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .inicio{
     background-image: url(../img/backgrounds/paper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   text-align: center;
-}
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .contador{
@@ -75,7 +79,7 @@ body {
 .chart{
     position: relative;
     width:25%;
-    height: 260px;
+    height: 50px;
 }
 
 .chart h3{
@@ -85,6 +89,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: larger;
+
 }
 
 /* DIV CIRCULO DE FONDO */
@@ -108,19 +113,11 @@ body {
 
 
 .img-icons{
-    width: 5%;
+    width: 6%;
 }
-
 
 
 .reloj{
     display: flex;
     justify-items: center;
-}
-
-.reloj-card{
-    margin: 15px;
-    padding: 20px;
-    width: 90px;
-    height: 90px;
 }
