@@ -121,16 +121,11 @@ body {
     justify-items: center;
 }
 
-
 .locations{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    background-color: red;
+    padding: 10px;
 }
 
-/* .card{
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-} */
+.card{
+    background-color: green;
+}
