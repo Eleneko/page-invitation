@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -124,8 +122,103 @@ body {
 .locations{
     background-color: red;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .card{
+    background-color: blue;
+    height: 500px;
+}
+
+.card-body{
     background-color: green;
+    width: 30rem;
+}
+
+.card-img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.location-hour{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2rem;
+    color: #1f1f1fd1;
+    font-weight: 500;
+}
+
+/* MESA DE REGALOS */
+.gifs{
+    text-align: center;
+}
+
+/* Float four columns side by side */
+.columna {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .fila {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .fila:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .gift-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .columna {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* ITINERARIO */
+  .itinerario{
+    text-align: center;
+  }
+
+  /* ASISTENCIA */
+  .asistencia{
+    text-align: center;
+  }
+
+.asistencia a{
+    color: #fff;
+    background-color: #94b8d7;
+    border-color: #94b8d7;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+}
+
+.asistencia a:hover{
+    background-color: #fd7e14;
+}
+  
+.info h2{
+    font-size: x-large;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 200;
 }
