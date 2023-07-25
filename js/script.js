@@ -1,5 +1,5 @@
 // Establecer la fecha aqui, en formato ingles
-var countDownDate = new Date("Oct 20, 2023 14:00:00").getTime();
+var countDownDate = new Date("Sep 23, 2023 20:00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
   // Get today's date and time

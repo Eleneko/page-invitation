@@ -119,6 +119,8 @@ body {
     justify-items: center;
 }
 
+/* LOCACION */
+
 .locations{
     background-color: red;
     padding: 10px;
@@ -126,21 +128,6 @@ body {
     justify-content: center;
 }
 
-.card{
-    background-color: blue;
-    height: 500px;
-}
-
-.card-body{
-    background-color: green;
-    width: 30rem;
-}
-
-.card-img{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-}
 
 .location-hour{
     font-family: 'Libre Bodoni', serif;
@@ -148,6 +135,9 @@ body {
     color: #1f1f1fd1;
     font-weight: 500;
 }
+
+
+
 
 /* MESA DE REGALOS */
 .gifs{
