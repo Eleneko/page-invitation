@@ -272,3 +272,17 @@ h6 {
 button:hover {
   background-color: #4e799e;
 }
+
+.image-cover{
+    background-image: url(../img/photos/cover.jpeg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: 45rem;
+}
+
+.album{
+  text-align: center;
+  align-items: center;
+}
