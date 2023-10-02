@@ -1,19 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i|Satisfy");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: url(../img/backgrounds/paper.jpg);
+  /* background: linear-gradient(100deg,#fcf3f6 , #cdc4b0); */
 }
 
 .tittle {
   font-family: "Carattere", cursive;
-  color: #467ca0d1;
+  text-align: center;
   font-size: 5rem;
+  background: linear-gradient(45deg, #deb956, #b97027);
+  -webkit-background-clip: text; /* Propiedad específica de navegadores WebKit */
+  background-clip: text;
+  color: transparent;
+}
+
+.inicio {
+  background-image: url(../img/backgrounds/paper2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+}
+
+.inicio h1 {
+  color: #420000;
+  font-size: 3.2rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+.inicio h2 {
+  font-family: "Carattere", cursive;
+  text-align: center;
+  font-size: 3rem;
+  color: transparent;
+  background: linear-gradient(45deg, #deb956, #b97027);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .h1,
@@ -41,40 +75,83 @@ h6 {
   font-weight: 500;
 }
 
-.section {
-  background-image: url(../img/backgrounds/sky.jpg);
-  background-position: center;
-  background-size: cover;
+/* CONTADOR */
+
+.contador-container {
+  background: linear-gradient(100deg, #512d15, #b97027);
   margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
+  padding: 3% 0%;
 }
 
-.section h2 {
-  font-size: 3rem;
-  font-weight: 600;
+.tarjeta-contador {
+  background-color: #f5f2e9;
+  padding: 3% 0%;
+  margin: 0 10%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.inicio {
-  background-image: url(../img/backgrounds/paper.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+.contador-titles {
+  font-family: "Satisfy", cursive;
+  font-size: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 700px;
+    background-image: url("../img/icons/leaf.png");
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 700px;
+    background-image: url("../img/icons/leaf.png");
+  }
+
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 48px;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+p.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 30px;
+  padding-bottom: 40px;
 }
 
 .contador {
-  max-width: 650px;
+  max-width: 540px;
   margin: 60px auto;
-}
-
-.contador h1 {
-  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .center-abs {
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -91,7 +168,7 @@ h6 {
 }
 
 .chart h3 {
-  color: #fff;
+  color: #5a3317;
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -99,22 +176,20 @@ h6 {
   font-size: larger;
 }
 
-/* DIV CIRCULO DE FONDO */
 .circle {
   width: 150px;
   height: 150px;
-  background-color: #94b8d7;
   z-index: 1;
-  border: 10px #baeaff solid;
+  /* border: #420000 2px solid;
+  border-radius: 100%; */
 }
 
 .text {
   z-index: 3;
   text-align: center;
   width: 100%;
-  font-size: 3.8em;
-  font-weight: 500;
-  color: white;
+  font-size: 3.8em; 
+  color: #5a3317;
   margin-top: -10px;
 }
 
@@ -143,31 +218,22 @@ h6 {
   font-weight: 500;
 }
 
-/* MESA DE REGALOS */
-.gifs {
-  text-align: center;
-}
-
-/* Float four columns side by side */
 .columna {
   float: left;
   width: 20%;
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
 .fila {
   margin: 0 -5px;
 }
 
-/* Clear floats after the columns */
 .fila:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the counter cards */
 .gift-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -176,7 +242,6 @@ h6 {
   border-radius: 5px;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .columna {
     width: 100%;
@@ -193,37 +258,45 @@ h6 {
 /* ASISTENCIA */
 .asistencia {
   text-align: center;
+  align-items: center;
+  background-image: url(../img/backgrounds/Default_table_dinner_party_celebration_background_0.jpg);
+  color: white;
+  padding: 5% 0;
 }
 
-.asistencia a {
+.asistencia p {
+  font-family: "Playfair Display", serif;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.link-container img {
+  margin-right: 10px; 
+}
+
+.link-container a {
   color: #fff;
-  background-color: #94b8d7;
-  border-color: #94b8d7;
-  display: inline-block;
+  background-color: #deb956;
   text-decoration: none;
-  font-size: 1rem;
-  vertical-align: middle;
+  font-size: 1.3rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  vertical-align: middle;
   cursor: pointer;
-  padding: 0.675rem 0.75rem;
+  padding: 0.5rem;
 }
 
-.asistencia a:hover {
-  background-color: #fd7e14;
+.link-container a:hover {
+  background-color: #b26716;
 }
 
-#whatsapp {
-  vertical-align: middle;
-}
+/* ----------------- */
 
-.info h2 {
-  font-size: x-large;
-  font-family: "Libre Bodoni", serif;
-  font-weight: 200;
-}
 
 .location-card {
   display: flex;
@@ -233,7 +306,6 @@ h6 {
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
-
   box-shadow: 0.5px 1.1px 0.9px rgba(0, 0, 0, 0.083),
     1.8px 3.6px 3.1px rgba(0, 0, 0, 0.095), 8px 16px 14px rgba(0, 0, 0, 0.1);
 }
@@ -257,7 +329,7 @@ h6 {
 }
 
 .btn-map {
-  background-color: #81a6c7;
+  background-color: #deb956;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -266,23 +338,113 @@ h6 {
   margin-top: 15px;
   width: 100%;
   max-width: 200px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 button:hover {
-  background-color: #4e799e;
+  background-color: #d49126;
 }
 
-.image-cover{
-    background-image: url(../img/photos/cover.jpeg);
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    height: 45rem;
+.image-cover {
+  background-image: url(../img/photos/cover.jpeg);
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  height: 45rem;
 }
 
-.album{
+.album {
   text-align: center;
   align-items: center;
+}
+
+/* MESA DE REGALOS */
+.invitation {
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/backgrounds/gifts-gold.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.invitation p {
+  color: rgb(255, 255, 255);
+  font-family: "Playfair Display", serif;
+  font-size: large;
+}
+
+.invite {
+  width: 60%;
+  min-width: 500px;
+  margin: 2% 5%;
+  background: rgba(50, 20, 4, 0.653);
+  padding: 2% 5%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-sizing: border-box;
+  background-image: url("../img/icons/gift2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 1;
+  padding: 15px;
+  margin: 30px;
+  cursor: pointer;
+  position: relative;
+  height: 12rem;
+}
+
+.card:hover {
+  background-image: url("../img/icons/gift3.png");
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.2s ease-in-out;
+  margin-top: 3.5rem;
+}
+
+.card:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.card a {
+  background-color: #934d18;
+  color: #f9dbb6;
+  padding: 2% 5%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-decoration: none;
+  font-weight: 500;
+  border-color: #f9dbb6;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.card a:hover {
+  color: white;
+  background-color: #934d18;
+  border-color: #d6aa4d;
+  border-width: 3px;
+  border-style: solid;
+}
+.card p {
+  color: #934d18;
+  margin-bottom: -38px;
+  margin-top: 37px;
 }
